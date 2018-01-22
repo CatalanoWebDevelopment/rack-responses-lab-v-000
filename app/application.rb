@@ -1,3 +1,3 @@
-class Application 
-  resp = Rack::Response
+class Application
+  resp = Rack::Response.new
 end
