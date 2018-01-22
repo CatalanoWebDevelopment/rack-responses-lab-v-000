@@ -1,10 +1,17 @@
 require 'pry'
 class Application
   resp = Rack::Response.new
-binding.pry
-  
 
-  
+  time = Time.now
+
+  if time.hour > 12
+    resp.write "Good Afternoon!"
+  else
+    resp.write "Good Morning!"
+  end
+
+
+
 
 
   resp.finish
