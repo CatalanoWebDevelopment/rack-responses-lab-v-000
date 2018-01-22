@@ -4,6 +4,8 @@ class Application
 binding.pry
   i = Time.now.to_i
 
+  
+
 
   resp.finish
 end
